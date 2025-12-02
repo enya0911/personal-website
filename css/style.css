@@ -761,6 +761,124 @@ body {
 }
 
 /* ============================================
+   自我成長與領導力區塊
+   ============================================ */
+.self-growth-section {
+    background: linear-gradient(135deg, var(--white) 0%, var(--warm-cream) 100%);
+}
+
+.self-growth-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.self-growth-intro {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.self-growth-intro p {
+    font-size: 1.2rem;
+    color: var(--medium-gray);
+    line-height: 2;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.self-growth-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.growth-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(232, 240, 247, 0.8));
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: var(--transition-base);
+    border: 2px solid transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+}
+
+.growth-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(44, 95, 141, 0.2);
+    border-color: var(--warm-orange);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(232, 240, 247, 1));
+}
+
+.growth-card .card-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.growth-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.growth-card p {
+    color: var(--medium-gray);
+    line-height: 1.9;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.growth-quote {
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    padding: 3rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(44, 95, 141, 0.3);
+    margin-top: var(--spacing-lg);
+    text-align: center;
+    color: var(--white);
+}
+
+.growth-quote blockquote {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.growth-quote p {
+    font-size: 1.4rem;
+    line-height: 2;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.95);
+    position: relative;
+    padding: 0 2rem;
+}
+
+.growth-quote p::before {
+    content: '"';
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-family: Georgia, serif;
+}
+
+.growth-quote footer {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* ============================================
    專欄區塊
    ============================================ */
 .columns-section {
@@ -1114,6 +1232,31 @@ body {
     .gallery-overlay {
         transform: translateY(0);
         background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+    }
+    
+    .self-growth-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .self-growth-intro {
+        padding: 1.5rem;
+    }
+    
+    .self-growth-intro p {
+        font-size: 1.1rem;
+    }
+    
+    .growth-card {
+        padding: 2rem;
+    }
+    
+    .growth-quote {
+        padding: 2rem 1.5rem;
+    }
+    
+    .growth-quote p {
+        font-size: 1.2rem;
+        padding: 0 1rem;
     }
     
     .mass-intro,
