@@ -468,6 +468,261 @@ body {
 }
 
 /* ============================================
+   自我成長領導力區塊
+   ============================================ */
+.leadership-section {
+    background: linear-gradient(135deg, var(--light-blue) 0%, var(--warm-cream) 50%, var(--white) 100%);
+    padding: var(--spacing-xl) 0;
+}
+
+.leadership-intro {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto var(--spacing-lg);
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.leadership-intro p {
+    font-size: 1.2rem;
+    color: var(--medium-gray);
+    line-height: 2;
+    font-weight: 400;
+}
+
+.leadership-philosophy {
+    margin-bottom: var(--spacing-lg);
+}
+
+.leadership-philosophy h3 {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    font-weight: 700;
+}
+
+.philosophy-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.philosophy-item {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(232, 240, 247, 0.9));
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: var(--transition-base);
+    border: 2px solid transparent;
+    text-align: center;
+}
+
+.philosophy-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(44, 95, 141, 0.2);
+    border-color: var(--warm-orange);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(232, 240, 247, 1));
+}
+
+.philosophy-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.1));
+}
+
+.philosophy-item h4 {
+    font-size: 1.4rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.philosophy-item p {
+    color: var(--medium-gray);
+    line-height: 1.9;
+    font-size: 1.05rem;
+}
+
+.leadership-framework {
+    margin-bottom: var(--spacing-lg);
+    background-color: var(--white);
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.leadership-framework h3 {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    font-weight: 700;
+}
+
+.framework-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.framework-item {
+    background: linear-gradient(135deg, var(--light-blue), var(--warm-beige));
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: var(--transition-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.framework-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary-blue), var(--warm-orange));
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: var(--transition-base);
+}
+
+.framework-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 10px 30px rgba(44, 95, 141, 0.2);
+}
+
+.framework-item:hover::before {
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+.framework-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--warm-orange);
+    opacity: 0.3;
+    margin-bottom: 1rem;
+    font-family: Georgia, serif;
+}
+
+.framework-item h4 {
+    font-size: 1.3rem;
+    color: var(--primary-blue);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.framework-item p {
+    color: var(--medium-gray);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.leadership-quote {
+    margin: var(--spacing-lg) 0;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(44, 95, 141, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.leadership-quote::before {
+    content: '"';
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    font-size: 150px;
+    color: rgba(255, 255, 255, 0.1);
+    font-family: Georgia, serif;
+    line-height: 1;
+}
+
+.leadership-quote blockquote {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.leadership-quote p {
+    font-size: 1.3rem;
+    line-height: 2;
+    color: var(--white);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leadership-quote cite {
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--warm-orange);
+    font-weight: 600;
+    font-style: normal;
+}
+
+.leadership-resources {
+    background-color: var(--white);
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.leadership-resources h3 {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    font-weight: 700;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.resource-item {
+    background: linear-gradient(135deg, rgba(232, 240, 247, 0.5), rgba(245, 241, 235, 0.5));
+    padding: 2rem;
+    border-radius: 15px;
+    transition: var(--transition-base);
+    border: 2px solid transparent;
+    text-align: center;
+}
+
+.resource-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(44, 95, 141, 0.15);
+    border-color: var(--warm-orange);
+    background: linear-gradient(135deg, rgba(232, 240, 247, 0.8), rgba(245, 241, 235, 0.8));
+}
+
+.resource-item h4 {
+    font-size: 1.3rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.resource-item p {
+    color: var(--medium-gray);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* ============================================
    社會服務區塊
    ============================================ */
 .service-section {
@@ -1089,6 +1344,38 @@ body {
     
     .professional-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .philosophy-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .framework-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .leadership-intro {
+        padding: 1.5rem;
+    }
+    
+    .leadership-framework {
+        padding: 2rem 1.5rem;
+    }
+    
+    .leadership-quote {
+        padding: 2rem 1.5rem;
+    }
+    
+    .leadership-quote p {
+        font-size: 1.1rem;
+    }
+    
+    .leadership-resources {
+        padding: 2rem 1.5rem;
     }
     
     .service-items {
