@@ -187,7 +187,7 @@ function initScrollAnimations() {
     }, observerOptions);
     
     // 觀察需要動畫的元素
-    const animatedElements = document.querySelectorAll('.professional-card, .service-item, .about-content, .contact-content, .column-item, .venture-item, .gallery-item, .mass-intro, .mass-story, .mass-mission, .mass-cta');
+    const animatedElements = document.querySelectorAll('.professional-card, .service-item, .about-content, .contact-content, .column-item, .venture-item, .gallery-item, .mass-intro, .mass-story, .mass-mission, .mass-cta, .growth-card, .approach-item, .self-growth-intro, .self-growth-approach, .self-growth-quote');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';

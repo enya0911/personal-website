@@ -761,6 +761,155 @@ body {
 }
 
 /* ============================================
+   自我成長與領導力區塊
+   ============================================ */
+.self-growth-section {
+    background: linear-gradient(135deg, var(--white) 0%, var(--warm-cream) 100%);
+}
+
+.self-growth-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.self-growth-intro {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.self-growth-intro p {
+    font-size: 1.2rem;
+    color: var(--medium-gray);
+    line-height: 2;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.self-growth-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.growth-card {
+    background: linear-gradient(135deg, rgba(232, 240, 247, 0.9), rgba(255, 255, 255, 0.9));
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: var(--transition-base);
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.growth-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(44, 95, 141, 0.15);
+    border-color: var(--warm-orange);
+    background: linear-gradient(135deg, rgba(232, 240, 247, 1), rgba(255, 255, 255, 1));
+}
+
+.growth-card .card-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.growth-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+}
+
+.growth-card p {
+    color: var(--medium-gray);
+    line-height: 1.8;
+}
+
+.self-growth-approach {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--spacing-lg);
+}
+
+.self-growth-approach h3 {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+}
+
+.approach-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.approach-item {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, var(--light-blue), var(--warm-beige));
+    border-radius: 15px;
+    transition: var(--transition-base);
+}
+
+.approach-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.approach-item h4 {
+    font-size: 1.25rem;
+    color: var(--primary-blue);
+    margin-bottom: 0.75rem;
+}
+
+.approach-item p {
+    color: var(--medium-gray);
+    line-height: 1.8;
+}
+
+.self-growth-quote {
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    padding: 3rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(44, 95, 141, 0.3);
+    text-align: center;
+}
+
+.self-growth-quote .quote-text {
+    font-size: 1.3rem !important;
+    font-style: italic;
+    color: var(--white) !important;
+    line-height: 2;
+    margin: 0;
+    position: relative;
+    padding: 0 2rem;
+}
+
+.self-growth-quote .quote-text::before {
+    content: '"';
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+
+.self-growth-quote .quote-text::after {
+    content: '"';
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+}
+
+/* ============================================
    專欄區塊
    ============================================ */
 .columns-section {
@@ -1105,6 +1254,25 @@ body {
     
     .ventures-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .self-growth-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .approach-items {
+        grid-template-columns: 1fr;
+    }
+    
+    .self-growth-intro,
+    .self-growth-approach,
+    .self-growth-quote {
+        padding: 1.5rem;
+    }
+    
+    .self-growth-quote .quote-text {
+        font-size: 1.1rem !important;
+        padding: 0 1rem;
     }
     
     .gallery-grid {
